@@ -1,4 +1,4 @@
-# Charles Puppet Module for Boxen
+# Charles Puppet Module for Boxen [![Build Status](https://travis-ci.org/newtriks/puppet-charles.png)](https://travis-ci.org/newtriks/puppet-charles)
 
 Install [Charles](http://www.charlesproxy.com/), web debugging proxy application for Mac OS X.
 
