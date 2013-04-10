@@ -1,10 +1,15 @@
-# license_name: Your Name
-# license_key: 7ad6c7a6c87...
+# Public: Install Charles.app to /Applications, and preconfigure
+#         a site license
+#
+# Examples
+#
+#   class {'charles::license':
+#     license_name => 'Your name',
+#     license_key  => '7ad6c7a6c87...',
+#   }
 
-class charles::license(
-  $license_key  = undef,
-  $license_name = undef
-) {
+class charles::license($license_key, $license_name) {
+
   include boxen::config
   include charles
 
