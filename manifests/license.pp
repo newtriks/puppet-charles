@@ -10,6 +10,7 @@ class charles::license(
 
   file { "/Users/${::boxen_user}/Library/Preferences/com.xk72.charles.config":
     content => template('charles/com.xk72.charles.config.erb'),
+    replace => "no",
   }
 
 }
