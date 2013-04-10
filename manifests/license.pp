@@ -1,5 +1,5 @@
 # Public: Install Charles.app to /Applications, and preconfigure
-#         a site license
+#         a license & config file
 #
 # Examples
 #

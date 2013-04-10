@@ -8,6 +8,16 @@ Install [Charles](http://www.charlesproxy.com/), web debugging proxy application
 include charles
 ```
 
+Alternatively, if you have a license this can be pre-installed:
+
+```puppet
+class {'charles::license':
+  license_name => 'Your name',
+  license_key  => '7ad6c7a6c87...',
+}
+```
+
+
 ## Required Puppet Modules
 
 * `boxen`
