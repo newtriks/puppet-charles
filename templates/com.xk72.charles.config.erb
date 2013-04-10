@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.6.0_37" class="java.beans.XMLDecoder">
+<java version="1.7.0_13" class="java.beans.XMLDecoder">
  <object class="com.xk72.charles.config.CharlesConfiguration">
+  <void property="accessControlConfiguration">
+   <void property="ipRanges">
+    <void method="add">
+     <object class="com.xk72.charles.lib.IPRange">
+      <void property="ip">
+       <array class="int" length="4"/>
+      </void>
+      <void property="mask">
+       <array class="int" length="4"/>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="proxyConfiguration">
+   <void property="macOSXConfiguration">
+    <void property="enableAtStartup">
+     <boolean>false</boolean>
+    </void>
+   </void>
+  </void>
   <void property="registrationConfiguration">
    <void property="key">
     <string><%= @license_key %></string>
