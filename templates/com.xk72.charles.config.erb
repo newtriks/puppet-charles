@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_13" class="java.beans.XMLDecoder">
+ <object class="com.xk72.charles.config.CharlesConfiguration">
+  <void property="accessControlConfiguration">
+   <void property="ipRanges">
+    <void method="add">
+     <object class="com.xk72.charles.lib.IPRange">
+      <void property="ip">
+       <array class="int" length="4"/>
+      </void>
+      <void property="mask">
+       <array class="int" length="4"/>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="proxyConfiguration">
+   <void property="macOSXConfiguration">
+    <void property="enableAtStartup">
+     <boolean>false</boolean>
+    </void>
+   </void>
+  </void>
+  <void property="registrationConfiguration">
+   <void property="key">
+    <string><%= @license_key %></string>
+   </void>
+   <void property="name">
+    <string><%= @license_name %></string>
+   </void>
+  </void>
+  <void property="startupConfiguration">
+   <void property="lastCheckUpdates">
+    <object class="java.util.Date">
+     <long>1365172954329</long>
+    </object>
+   </void>
+   <void property="mainWindow">
+    <object class="java.awt.Rectangle" id="Rectangle0">
+     <void class="java.awt.Rectangle" method="getField">
+      <string>x</string>
+      <void method="set">
+       <object idref="Rectangle0"/>
+       <int>499</int>
+      </void>
+     </void>
+     <void class="java.awt.Rectangle" method="getField">
+      <string>y</string>
+      <void method="set">
+       <object idref="Rectangle0"/>
+       <int>98</int>
+      </void>
+     </void>
+     <void class="java.awt.Rectangle" method="getField">
+      <string>width</string>
+      <void method="set">
+       <object idref="Rectangle0"/>
+       <int>600</int>
+      </void>
+     </void>
+     <void class="java.awt.Rectangle" method="getField">
+      <string>height</string>
+      <void method="set">
+       <object idref="Rectangle0"/>
+       <int>440</int>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void property="maximised">
+    <boolean>true</boolean>
+   </void>
+  </void>
+  <void property="toolConfiguration">
+   <void property="configs">
+    <void method="put">
+     <string>Map Remote</string>
+     <object class="com.xk72.charles.tools.MapTool$MapConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Auto Save</string>
+     <object class="com.xk72.charles.tools.AutoSaveTool$AutoSaveConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Reverse Proxies</string>
+     <object class="com.xk72.charles.tools.ReverseProxiesTool$ReverseProxiesConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Block Cookies</string>
+     <object class="com.xk72.charles.tools.lib.SelectedHostsToolConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Mirror</string>
+     <object class="com.xk72.charles.tools.MirrorTool$MirrorConfiguration"/>
+    </void>
+    <void method="put">
+     <string>DNS Spoofing</string>
+     <object class="com.xk72.charles.tools.DNSSpoofingTool$DNSSpoofingConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Port Forwarding</string>
+     <object class="com.xk72.charles.tools.PortForwardingTool$PortForwardingConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Breakpoints</string>
+     <object class="com.xk72.charles.tools.breakpoints.BreakpointsTool$BreakpointsConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Client Process</string>
+     <object class="com.xk72.charles.tools.lib.SelectedHostsToolConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Rewrite</string>
+     <object class="com.xk72.charles.tools.rewrite.RewriteConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Map Local</string>
+     <object class="com.xk72.charles.tools.MapLocalTool$MapLocalConfiguration"/>
+    </void>
+    <void method="put">
+     <string>Black List</string>
+     <object class="com.xk72.charles.tools.BlacklistTool$BlacklistConfiguration"/>
+    </void>
+    <void method="put">
+     <string>No Caching</string>
+     <object class="com.xk72.charles.tools.lib.SelectedHostsToolConfiguration"/>
+    </void>
+   </void>
+  </void>
+  <void property="userInterfaceConfiguration">
+   <void property="properties">
+    <void method="put">
+     <string>SessionFrame.splitPlane.dividerLocation.vertical</string>
+     <int>200</int>
+    </void>
+    <void method="put">
+     <string>SessionFrame.navTabs.mode</string>
+     <string>Sequence</string>
+    </void>
+    <void method="put">
+     <string>NavigatorJTable.TABLE_COLUMN_STATES</string>
+     <object class="com.xk72.charles.gui.lib.MemoryJTable$ColumnStates">
+      <void property="positions">
+       <array class="int" length="9">
+        <void index="1">
+         <int>1</int>
+        </void>
+        <void index="2">
+         <int>2</int>
+        </void>
+        <void index="3">
+         <int>3</int>
+        </void>
+        <void index="4">
+         <int>4</int>
+        </void>
+        <void index="5">
+         <int>5</int>
+        </void>
+        <void index="6">
+         <int>6</int>
+        </void>
+        <void index="7">
+         <int>7</int>
+        </void>
+        <void index="8">
+         <int>8</int>
+        </void>
+       </array>
+      </void>
+      <void property="sizes">
+       <array class="double" length="9">
+        <void index="0">
+         <double>0.017269736842105265</double>
+        </void>
+        <void index="1">
+         <double>0.02549342105263158</double>
+        </void>
+        <void index="2">
+         <double>0.03125</double>
+        </void>
+        <void index="3">
+         <double>0.1611842105263158</double>
+        </void>
+        <void index="4">
+         <double>0.553453947368421</double>
+        </void>
+        <void index="5">
+         <double>0.05592105263157895</double>
+        </void>
+        <void index="6">
+         <double>0.06085526315789474</double>
+        </void>
+        <void index="7">
+         <double>0.0805921052631579</double>
+        </void>
+        <void index="8">
+         <double>0.012335526315789474</double>
+        </void>
+       </array>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <string>SessionFrame.splitPlane.dividerLocation.horizontal</string>
+     <int>424</int>
+    </void>
+   </void>
+   <void property="warningsSeen">
+    <void method="put">
+     <string>mozilla.extension</string>
+     <boolean>true</boolean>
+    </void>
+   </void>
+  </void>
+ </object>
+</java>
